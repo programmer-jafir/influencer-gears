@@ -208,11 +208,17 @@ small{
 footer{
     background: #0B0D17;
     height: 250px;
+    width: 100%;
     text-align: center;
     margin: 0;
 }
+.footer-center{
+    justify-content: center;
+}
 .footer-padding{
     padding-top: 100px;
+    padding-left: 0;
+    align-items: center;
 }
 .footer-title{
     color: #FFFFFF;
