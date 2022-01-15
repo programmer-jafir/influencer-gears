@@ -278,4 +278,43 @@ footer{
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 10px;
     }
+}
+@media only screen and (max-width:992px) {
+    .banner-left{
+        width: 50%;
+        align-items: center;
+    }
+    .banner-right{
+        width: 50%;
+        justify-content: center;
+        float: left;
+        padding-top: 250px;
+    }
+    .banner-right img{
+        height: 350px;
+        width: 350px;
+    }
+    .banner-right:hover{
+        animation: none;
+    }
+    .banner{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .product-section{
+        width: 329px;
+        height: 2504px;
+        padding-left: 60px;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 0;
+    }
+    .customer-review{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 10px;
+        padding-left: 200px;
+    }
 }    
