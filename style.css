@@ -85,7 +85,7 @@ h2{
     Popular collection title
 ---------------------------- */
 .product-title{
-    text-align: center;
+    justify-content: center;
     font-weight: 600;
     font-size: 28px;
 }
@@ -96,7 +96,7 @@ h2{
     width: 1047px;
     height: 1662px;
     padding-left: 243px;
-    padding-right: 197px;
+    /* padding-right: 197px; */ 
 }
 /* ------------
     Product img
@@ -176,6 +176,13 @@ small{
     padding-bottom: 100px;
     cursor: pointer;
 }
+.costomer-title{
+    padding-top: 200px;
+    padding-left: 60px;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 28px;
+}
 .customer-review{
     padding: 50px 100px;
     display: grid;
@@ -183,13 +190,13 @@ small{
     grid-column-gap: 30px;
 }
 .costomer{
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 300px;
     text-align: center;
     background: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     border-radius: 15px;
-    padding: 20px;
+    padding: 10px;
 }
 .costomer img{
     width: 150px;
@@ -202,6 +209,7 @@ footer{
     background: #0B0D17;
     height: 250px;
     text-align: center;
+    margin: 0;
 }
 .footer-padding{
     padding-top: 100px;
@@ -217,10 +225,51 @@ footer{
     font-weight: bold;
     font-size: 14px;
     color: #D9DBE1;
-    margin: 3px;
+    padding: 3px;
 }
 .social-icon{
     color: White;
     padding: 17px 15px;
     font-size: 20px;
+}
+/* ------------
+   Mobile Device
+   ------------- */
+@media only screen and (max-width:688px) {
+    .banner-left{
+        width: 50%;
+        align-items: center;
+    }
+    .banner-right{
+        width: 50%;
+        justify-content: center;
+        float: left;
+        padding-top: 400px;
+    }
+    .banner-right img{
+        height: 257px;
+        width: 257px;
+    }
+    .banner-right:hover{
+        animation: none;
+    }
+    .banner{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .product-section{
+        width: 329px;
+        height: 4504px;
+        padding-left: 60px;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 0;
+    }
+    .customer-review{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 10px;
+    }
 }    
